@@ -7,7 +7,7 @@ const Abayapage = () => {
   return (
     <div>
         <Header/>
-         <Abaya/>
+        <Abaya/>
         <Footer/>
     </div>
   )

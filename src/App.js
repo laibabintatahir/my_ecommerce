@@ -14,7 +14,12 @@ import LoginForm from "./components/login/Login";
 import SignupForm from "./components/login/Signup";
 import Header from "./components/Header/Header";
 import Home from "./Pages/Home";
+
 import Abayapage from "./Pages/Abayapage";
+import Hijabpage from "./Pages/Hijabpage";
+import  Accessoriespage from "./Pages/Accessoriespage";
+import Aboutpage from "./Pages/Aboutpage";
+import Contactpage from "./Pages/Contactpage";
 
 const App = () => {
   // const [formType, setFormType] = useState("login");
@@ -29,10 +34,10 @@ const App = () => {
 
         <Route path="/" element={ <Home/>}/>
         <Route path="/abayapage" element={<Abayapage/> }/>
-        <Route path="/hijabs" element={ <Hijabs /> }/>
-        <Route path="/accessories" element={<Acessories /> }/>
-        <Route path="/contactus" element={ <ContactUs/>}/>
-        <Route path="/aboutus" element={  <AboutUsPage/>}/>
+        <Route path="/hijabs" element={ <Hijabpage/> }/>
+        <Route path="/accessories" element={<Accessoriespage/> }/>
+        <Route path="/contactus" element={ <Contactpage/>}/>
+        <Route path="/aboutus" element={  <Aboutpage/>}/>
 
       </Routes>
       <br />

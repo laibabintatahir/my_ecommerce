@@ -1,16 +1,15 @@
 import React from 'react'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import Homecontent from '../components/Header/Homecontent'
-
-const Home = () => {
+import AboutUsPage from '../components/Aboutus/Aboutus'
+const Aboutpage = () => {
   return (
     <div>
         <Header/>
-        <Homecontent/>
-        <Footer/>
+      <AboutUsPage/>
+      <Footer/>
     </div>
   )
 }
 
-export default Home
+export default Aboutpage

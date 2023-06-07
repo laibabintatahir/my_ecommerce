@@ -84,7 +84,6 @@ const Abaya = () => {
 
   return (
     <div>
-      <Header></Header>
       <div className="women-shoes-section">
         <h2>ABAYAS</h2>
         <div className="shoes-container">

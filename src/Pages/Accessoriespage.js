@@ -1,16 +1,15 @@
 import React from 'react'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import Homecontent from '../components/Header/Homecontent'
-
-const Home = () => {
+import Acessories from '../components/Products/Acessories'
+const Accessoriespage = () => {
   return (
     <div>
         <Header/>
-        <Homecontent/>
-        <Footer/>
+      <Acessories/>
+      <Footer/>
     </div>
   )
 }
 
-export default Home
+export default Accessoriespage
