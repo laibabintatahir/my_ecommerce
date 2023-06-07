@@ -156,7 +156,7 @@ const Header = () => {
       <div className="banner">
         <img src="images/malbus.jpg" alt="Banner" />
         <div className="banner-text">
-          <h2>MALBUS</h2>
+          <h2>LUXE MALBUS</h2>
           <p>
             Head Office: Plot #2, Industrial Triangle, Humak, Model Town,
             Islamabad
