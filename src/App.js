@@ -30,7 +30,7 @@ const App = () => {
       <ContactUs/>
       <AboutUsPage/>
       <Footer />
-      
+
       <br />
       <br />
 
