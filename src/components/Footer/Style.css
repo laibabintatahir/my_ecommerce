@@ -1,7 +1,7 @@
 /* Footer Styles */
 .footer {
-    background-color: #8d866c;
-    color: #ffffff;
+    background-color: #e7e5dc;
+    color: #181717;
     padding: 40px 0;
   }
   
@@ -20,17 +20,18 @@
   .footer-col {
     flex-basis: 30%;
     margin-bottom: 40px;
+    color: #181717;
   }
   
   .footer-heading {
-    color: #e0ac1c;
+    color: #171716;
     font-family: 'Cookie', cursive;
     font-size: 24px;
     margin-bottom: 20px;
   }
   
   .footer-heading span {
-    color: #ffffff;
+    color: #912e2e;
   }
   
   .footer-description {
@@ -48,8 +49,8 @@
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-color: #33383b;
-    color: #ffffff;
+    background-color: #f8f9f9;
+    color: #db1515;
     font-size: 20px;
     text-align: center;
     line-height: 40px;
@@ -66,17 +67,20 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    color: #171716;
   }
   
   .footer-links li {
     margin-bottom: 10px;
     list-style: none;
+    color: #171716;
   }
   
   .footer-links a {
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s ease;
+    color: #171716;
   }
   
   .footer-links a:hover {

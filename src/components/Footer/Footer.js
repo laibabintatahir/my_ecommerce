@@ -45,7 +45,7 @@ const Footer = () => {
               <li><i className="fa fa-map-marker"></i>Abbottabad, Pakistan</li>
               <li><i className="fa fa-phone"></i>+92 3365613777</li>
               <li><i className="fa fa-envelope"></i>
-              <a href="mailto:sagar00001.co@gmail.com" style={{color: "white"}}>malbus@gmail.com</a></li>
+              <a href="mailto:sagar00001.co@gmail.com" style={{color: "black"}}>malbus@gmail.com</a></li>
             </ul>
           </div>
         </div>

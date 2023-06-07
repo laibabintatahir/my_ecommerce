@@ -166,6 +166,12 @@ const Header = () => {
           <p>Friday - Sunday, 11:00 AM (PST) - 12:00 AM (PST)</p>
         </div>
       </div>
+      <div>
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
 
       <Footer/>
     </>
