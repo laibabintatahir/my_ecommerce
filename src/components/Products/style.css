@@ -110,29 +110,34 @@
   
   .product-title {
     font-size: 24px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
   
   .breadcrumb {
-    font-size: 14px;
-    color: #888;
-    margin-bottom: 10px;
+    font-size: 20px;
+    color:#ff014f;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    /* margin-bottom: 10px; */
+    text-align: left;
   }
   
   .price {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    color: #888;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    /* margin-bottom: 10px; */
   }
   
   .tax-shipping {
     color: #888;
     margin-bottom: 10px;
+    text-align: left;
   }
   
   .product-options {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   
   .product-options h4 {
@@ -150,7 +155,7 @@
   }
   
   .product-actions p {
-    margin-bottom: 5px;
+    text-align: left;
   }
   
   .add-to-cart-btn {

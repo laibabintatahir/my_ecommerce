@@ -12,10 +12,10 @@ const ProductDetails = ({ product, addToCart }) => {
         <img src={product.image} alt={product.name} />
       </div>
       <div className="product-info">
-        <h1 className="product-title">Product Details</h1>
+        <br/><br/><br/>
         <div className="product-description">
-          <h2 className="breadcrumb">Home / {product.name}</h2>
-          <h3 className="price">Regular price: Rs. {product.price}</h3>
+          <h1 className="breadcrumb"> <span style={{color:"Black"}}>Product Details</span> / {product.name}</h1>
+          <h5 className="price">Regular price: Rs. {product.price}</h5>
           <p className="tax-shipping">
             Tax included. Shipping calculated at checkout.
           </p>
@@ -28,27 +28,22 @@ const ProductDetails = ({ product, addToCart }) => {
             <p>L</p>
             <p>XL</p>
           </div>
+        </div>
+        <div className="product-options">
           <div className="fabric">
             <h4>FABRIC</h4>
             <p>Chiffon</p>
           </div>
-          <div className="quantity">
-            <h4>QUANTITY</h4>
-            <p>1</p>
-          </div>
-        </div>
-        <div className="product-actions">
-          <button className="add-to-cart-btn" onClick={handleAddToCart}>
-            Add to Cart
-          </button>
-          <p>Local/International Shipping Available</p>
-          <p>Pickup available at Malbus Outlet</p>
-          <p>Usually ready in 24 hours</p>
         </div>
 
-        <p className="store-info">View store information</p>
+      <div className="product-actions">
+        <button className="add-to-cart-btn" onClick={handleAddToCart}>
+          Add to Cart
+        </button>
+        <p>Local/International Shipping Available</p>
       </div>
     </div>
+    </div >
   );
 };
 

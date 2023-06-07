@@ -9,14 +9,11 @@ import Footer from "../Footer/Footer";
 
 const Header = () => {
   const categories = [
-    {
-      name: "Impressions",
-      image: "images/impressions.jpg",
-      link: "/impressions",
+    {name: "Impressions", image: "images/impressions.jpg", link: "/impressions",
     },
     { name: "Abayas", image: "images/abayas.jpg", link: "/abayas" },
     { name: "Kimonos", image: "images/kimonos1.jpg", link: "/kimonos" },
-    { name: "Hijabs", image: "images/hijabsC3.jpg", link: "/hijabs" },
+    { name: "Hijabs", image: "images/h13.jpg", link: "/hijabs" },
   ];
 
   const Newarrivals = [

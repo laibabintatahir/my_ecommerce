@@ -12,7 +12,6 @@ import Cart from "./Cart";
       { id: 11, name: "Dreamy Chiffon ", price: 560, image: "images/h11.jpg" },
       { id: 12, name: "CHIFFON HIJAB MA", price: 650, image: "images/h12.jpg" },
       { id: 6, name: "CHIFFON HIJAB Wrap s", price: 535, image: "images/h3.jpg" },
-      { id: 7, name: "CHIFFON HIJAB Wrap s", price: 535, image: "images/h13.jpg" },
     ]);
 
   const [cartItems, setCartItems] = useState([]);
