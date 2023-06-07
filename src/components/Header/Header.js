@@ -38,14 +38,10 @@ const Header = () => {
                 <Link to="/contactus">CONTACT US</Link>
               </li>
               <li className="cart-icon">
-                <Link to="/">
-                  <i className="fa fa-shopping-cart"></i>
-                </Link>
+                <Link to="/cart"> <i className="fa fa-shopping-cart"></i> </Link>
               </li>
               <li className="user-icon">
-                <Link to="/">
-                  <i className="fa fa-user"></i>
-                </Link>
+                <Link to="/login"> <i className="fa fa-user"></i></Link>
               </li>
             </ul>
           </nav>
