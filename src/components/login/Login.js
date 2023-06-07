@@ -19,7 +19,7 @@ const LoginForm = ({ onFormSwitch }) => {
     <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className="form-group1">
           <label htmlFor="email">Email:</label>
           <input
             type="email"
@@ -29,7 +29,7 @@ const LoginForm = ({ onFormSwitch }) => {
             required
           />
         </div>
-        <div className="form-group">
+        <div className="form-group1">
           <label htmlFor="password">Password:</label>
           <input
             type="password"

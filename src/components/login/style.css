@@ -11,17 +11,17 @@
     margin-top: 0;
   }
   
-  .form-group {
+  .form-group1 {
     margin-bottom: 10px;
   }
   
-  .form-group label {
+  .form-group1 label {
     display: block;
     font-weight: bold;
   }
   
-  .form-group input {
-    width: 280px;
+  .form-group1 input {
+    width: 90%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -57,16 +57,16 @@
     margin-top: 0;
   }
   
-  .form-group {
+  .form-group1 {
     margin-bottom: 10px;
   }
   
-  .form-group label {
+  .form-group1 label {
     display: block;
     font-weight: bold;
   }
   
-  .form-group input {
+  .form-group1 input {
     width: 290px;
     padding: 5px;
     border: 1px solid #ccc;

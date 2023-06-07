@@ -1,0 +1,90 @@
+.women-shoes-section {
+    text-align: center;
+  }
+  
+  .shoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .shoe-card {
+    width: calc(20% - 20px);
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  .shoe-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+     border-radius: 5px;
+  }
+  
+  .shoe-card h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .shoe-card p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .shoe-card button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .shoe-card button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .shoe-card button:focus {
+    outline: none;
+  }
+
+
+  /* cart */
+
+  .cart-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    /* display: flex;
+    justify-content: center; */
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .cart-item-controls button {
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 0 5px;
+  }
+  
+  .cart-item-controls span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .total-price {
+    font-weight: bold;
+    margin-top: 10px;
+  }
