@@ -5,12 +5,14 @@ import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
 const Homecontent = () => {
     const categories = [
-        {name: "Impressions", image: "images/impressions.jpg", link: "/impressions",
+        {name: "Impressions", image: "images/impressions.jpg", link: "/abayapage",
         },
-        { name: "Abayas", image: "images/abayas.jpg", link: "/abayas" },
-        { name: "Kimonos", image: "images/kimonos1.jpg", link: "/kimonos" },
+        { name: "Abayas", image: "images/abayas.jpg", link: "/abayapage" },
+        { name: "Kimonos", image: "images/kimonos1.jpg", link: "/abayapage" },
         { name: "Hijabs", image: "images/h13.jpg", link: "/hijabs" },
       ];
+
+  
     
       const Newarrivals = [
         {
@@ -85,7 +87,7 @@ const Homecontent = () => {
       <div className="new-arrivals">
         <h2>NEW ARRIVALS</h2>
         <div className="view-all-section">
-          <Link to="/view-all" className="view-all-button">
+          <Link to="/abayapage" className="view-all-button">
             View All
           </Link>
         </div>
