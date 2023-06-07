@@ -154,7 +154,7 @@ const Header = () => {
       <Testimonial />
 
       <div className="banner">
-        <img src="images/malbus.jpg" alt="Banner" />
+        <img src="images/malbus1.jpg" alt="Banner" />
         <div className="banner-text">
           <h2>LUXE MALBUS</h2>
           <p>

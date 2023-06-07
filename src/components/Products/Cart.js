@@ -1,12 +1,19 @@
 import React, { useMemo } from "react";
 import "./style.css";
 
-const Cart = ({ cartItems, increaseQuantity, decreaseQuantity, removeItem }) => {
+const Cart = ({
+  cartItems,
+  increaseQuantity,
+  decreaseQuantity,
+  removeItem,
+}) => {
   const totalPrice = useMemo(() => {
     let calculatedPrice = 0;
 
     for (const item of cartItems) {
-      calculatedPrice += item.price * item.quantity;
+      if (item.price && item.quantity) {
+        calculatedPrice += item.price * item.quantity;
+      }
     }
 
     return calculatedPrice;
@@ -23,7 +30,11 @@ const Cart = ({ cartItems, increaseQuantity, decreaseQuantity, removeItem }) => 
             {cartItems.map((item) => (
               <li key={item.id} className="cart-item">
                 <div className="cart-item-details">
-                  <img src={item.image} alt={item.name} className="cart-item-image" />
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="cart-item-image"
+                  />
                   <div className="cart-item-info">
                     <h3>{item.name}</h3>
                     <p>Price: {item.price}</p>
@@ -38,7 +49,9 @@ const Cart = ({ cartItems, increaseQuantity, decreaseQuantity, removeItem }) => 
               </li>
             ))}
           </ul>
-          <p className="total-price">Total Price: {totalPrice}</p>
+          <p className="total-price">
+            Total Price: {cartItems.length > 0 ? totalPrice : 0}
+          </p>
         </div>
       )}
     </div>
@@ -46,4 +59,3 @@ const Cart = ({ cartItems, increaseQuantity, decreaseQuantity, removeItem }) => 
 };
 
 export default Cart;
-

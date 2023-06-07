@@ -88,3 +88,86 @@
     font-weight: bold;
     margin-top: 10px;
   }
+
+
+  /* product details */
+  .product-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-info {
+    flex: 1;
+    margin-left: 40px;
+  }
+  
+  .product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .breadcrumb {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .tax-shipping {
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .product-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .product-options h4 {
+    margin-right: 10px;
+  }
+  
+  .size-options p,
+  .fabric p,
+  .quantity p {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+  
+  .product-actions p {
+    margin-bottom: 5px;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #ff014f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .store-info {
+    color: #888;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Add more styles as needed */
+  

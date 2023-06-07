@@ -42,7 +42,7 @@ const Footer = () => {
           <div className="footer-col">
             <h3 className="footer-heading">Contact Info</h3>
             <ul className="footer-contact">
-              <li><i className="fa fa-map-marker"></i>Abbottabad, Pakistan</li>
+              <li><i className="fa fa-map-marker"></i>Islamabad, Pakistan</li>
               <li><i className="fa fa-phone"></i>+92 3365613777</li>
               <li><i className="fa fa-envelope"></i>
               <a href="mailto:sagar00001.co@gmail.com" style={{color: "black"}}>malbus@gmail.com</a></li>
