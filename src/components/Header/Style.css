@@ -1,4 +1,4 @@
-/*------head-----------*/
+/*..............head..............*/
 .head {
   background-color: #8d866c;
   padding: 5px 0;
@@ -15,7 +15,7 @@
   font-size: 13px;
 }
 
-/* header */
+/* ..............header.............. */
 header {
   background-color: #f6f6f6;
   padding: 20px 0;
@@ -92,7 +92,7 @@ nav ul li a:hover {
   font-size: 12px;
 }
 
-
+/* ..............banner main.............. */
 .banner-container {
   height: 300px; /* Adjust the height as per your requirement */
   position: relative;
@@ -133,7 +133,7 @@ nav ul li a:hover {
 }
 
 
-/* Category Section */
+/* ..............Category Section.............. */
 .category-section {
   padding: 40px 0;
 }
@@ -186,7 +186,7 @@ nav ul li a:hover {
   background-color: #ff014f;
 }
 
-/* new arrivals */
+/* ..............new arrivals.............. */
 
 .new-arrivals {
   padding: 20px;
@@ -242,10 +242,11 @@ nav ul li a:hover {
   color: #999;
 }
 
-/* testimonial */
+/* ..............testimonial.............. */
 .testimonial-section {
   text-align: center;
   padding: 20px;
+  background-color: transparent; /* Set the background to transparent */
 }
 
 .testimonial-list {
@@ -259,9 +260,9 @@ nav ul li a:hover {
   width: 300px;
   margin: 10px;
   padding: 20px;
-  border: 2px solid #333;
+  border: 1px solid #b35050;
   border-radius: 10px;
-  background-color: #f6f6f6;
+  background-color: #ffffff;
   transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
 }
@@ -284,12 +285,24 @@ h2 {
 }
 
 .testimonial:hover {
-  background-color:#ded4b2;
+  background-color: #e6e3d9;
+  color: #a17f7f;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: "Arial, sans-serif";
+}
+
+.testimonial:hover {
+  background-color:#dfbfae;
   color: #181616;
 }
 
 
-/* bottom banner  */
+/* ..............bottom banner..............  */
 .banner {
   position: relative;
   width: 100%;

@@ -3,7 +3,6 @@ import "./Style.css";
 import Head from "./Head";
 import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Testimonial from "./Testimonial";
 
 const Header = () => {
 

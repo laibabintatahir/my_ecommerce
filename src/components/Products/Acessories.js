@@ -59,7 +59,7 @@ const Acessories = () => {
   return (
     <div>
       <div className="women-shoes-section">
-        <h2>ABAYAS</h2>
+        <h2>ACESSORIES</h2>
         <div className="shoes-container">
           {Acessoriesdata.map((shoe) => (
             <div

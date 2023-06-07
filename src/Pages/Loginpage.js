@@ -14,11 +14,11 @@ const Loginpage = () => {
   };
 
   const handleLogin = () => {
-    navigate("/"); // Navigate to the home page ("/") after login
+    navigate("/"); 
   };
 
   const handleSignup = () => {
-    navigate("/"); // Navigate to the home page ("/") after signup
+    navigate("/"); 
   };
 
   return (
