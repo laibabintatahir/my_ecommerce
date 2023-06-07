@@ -1,60 +1,93 @@
+/*------head-----------*/
+.head {
+  background-color: #8d866c;
+  padding: 10px 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+.head i {
+  margin-right: 10px;
+}
+.head label {
+  margin-right: 30px;
+  font-size: 13px;
+}
+
+/* header */
+/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-  }
-  
-  .logo img {
-    height: 60px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li:first-child,
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    color: #555;
-  }
-  
-  .cart-login {
-    display: flex;
-    align-items: center;
-  }
-  
-  .cart-login > li {
-    margin-right: 20px;
-  }
-  
-  .cart-login > li:last-child {
-    margin-right: 0;
-  }
-  
-  .cart-login a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .cart-login a:hover {
-    color: #555;
-  }
-  
+  background-color: #f6f6f6;
+  padding: 20px 0;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 100px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #8d866c;
+}
+
+.cart-icon i,
+.user-icon i {
+  font-size: 20px;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 18px;
+  height: 18px;
+  background-color:   #8d866c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+}

@@ -23,15 +23,6 @@ const App = () => {
 
   return (
     <div>
-      <br />
-      <br />
-      {formType === "login" ? (
-        <LoginForm onFormSwitch={handleFormSwitch} />
-      ) : (
-        <SignupForm onFormSwitch={handleFormSwitch} />
-      )}
-      <br />
-      <br />
       <Header />
       <Abaya />
       <Hijabs />
@@ -39,6 +30,18 @@ const App = () => {
       <ContactUs/>
       <AboutUsPage/>
       <Footer />
+      
+      <br />
+      <br />
+
+      {formType === "login" ? (
+        <LoginForm onFormSwitch={handleFormSwitch} />
+      ) : (
+        <SignupForm onFormSwitch={handleFormSwitch} />
+      )}
+      <br />
+      <br />
+
     </div>
   );
 };
