@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Hijabs from "./components/Hijabs";
+import Acessories from "./components/Acessories";
+import BlogPage from "./components/Blogpage";
+import Abaya from "./components/Abayas";
+import DetailedBlog from "./components/Detailedblog";
+import BlogItem from "./components/Blogitem";
+import { Routes, Route } from "react-router-dom";
+import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer/Footer";
+import AboutUsPage from "./components/Aboutus/Aboutus";
+// import Login from "./components/Login";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <Routes>
+
+       
+        <Route exact path="/" element={<BlogPage/>} />
+        <Route path="/blog/:id" element={<DetailedBlog/>} />
+
+      </Routes>
+      {/* <Login/> */}
+      <Abaya />
+      <Hijabs/>
+     {/* <AboutUsPage/> */}
+      <Acessories />
+      {/* <ContactUs/> */}
+      <Footer/>
     </div>
   );
 }
