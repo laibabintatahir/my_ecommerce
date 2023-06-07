@@ -1,35 +1,45 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import LoginForm from "../components/login/Login";
 import SignupForm from "../components/login/Signup";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
 const Loginpage = () => {
+  const navigate = useNavigate();
   const [formType, setFormType] = useState("login");
 
   const handleFormSwitch = (type) => {
     setFormType(type);
   };
 
+  const handleLogin = () => {
+    navigate("/"); // Navigate to the home page ("/") after login
+  };
+
+  const handleSignup = () => {
+    navigate("/"); // Navigate to the home page ("/") after signup
+  };
+
   return (
     <div>
       <Header />
       <div>
-    <br />
-      <br />
-      <br />
+        <br />
+        <br />
+        <br />
       </div>
 
       {formType === "login" ? (
-        <LoginForm onFormSwitch={handleFormSwitch} />
+        <LoginForm onFormSwitch={handleFormSwitch} onLogin={handleLogin} />
       ) : (
-        <SignupForm onFormSwitch={handleFormSwitch} />
+        <SignupForm onFormSwitch={handleFormSwitch} onSignup={handleSignup} />
       )}
 
-       <div>
-    <br />
-      <br />
-      <br />
+      <div>
+        <br />
+        <br />
+        <br />
       </div>
 
       <Footer />
@@ -38,3 +48,4 @@ const Loginpage = () => {
 };
 
 export default Loginpage;
+
