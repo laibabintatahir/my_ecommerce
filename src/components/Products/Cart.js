@@ -7,6 +7,7 @@ const Cart = ({
   decreaseQuantity,
   removeItem,
 }) => {
+  
   const totalPrice = useMemo(() => {
     let calculatedPrice = 0;
 

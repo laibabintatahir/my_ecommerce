@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ProductDetails from "./ProductDetails";
 import "./style.css";
 import Cart from "./Cart";
 
@@ -20,45 +21,52 @@ const Acessories = () => {
 
   const [cartItems, setCartItems] = useState([]);
 
-  const handleAddToCart = (shoe) => {
-    const existingItem = cartItems.find((item) => item.id === shoe.id);
+  const handleAddToCart = (product) => {
+    setCartItems([...cartItems, { ...product, quantity: 1 }]);
+  };
 
-    if (existingItem) {
-      const updatedCartItems = cartItems.map((item) =>
-        item.id === shoe.id ? { ...item, quantity: item.quantity + 1 } : item
-      );
-      setCartItems(updatedCartItems);
-    } else {
-      setCartItems([...cartItems, { ...shoe, quantity: 1 }]);
-    }
+  //for detail page
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const handleProductClick = (product) => {
+    setSelectedProduct(product);
   };
 
   const increaseQuantity = (item) => {
     const updatedCartItems = cartItems.map((cartItem) =>
-      cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
+      cartItem.id === item.id
+        ? { ...cartItem, quantity: cartItem.quantity + 1 }
+        : cartItem
     );
     setCartItems(updatedCartItems);
   };
 
   const decreaseQuantity = (item) => {
-    const updatedCartItems = cartItems.map((cartItem) =>
-      cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem
-    );
+    const updatedCartItems = cartItems.map((cartItem) => {
+      if (cartItem.id === item.id && cartItem.quantity > 1) {
+        return { ...cartItem, quantity: cartItem.quantity - 1 };
+      }
+      return cartItem;
+    });
     setCartItems(updatedCartItems);
   };
 
   const removeItem = (item) => {
-    const updatedCartItems = cartItems.filter((cartItem) => cartItem.id !== item.id);
-    setCartItems(updatedCartItems);
+    const updateCart = cartItems.filter((cartItem) => cartItem.id !== item.id);
+    setCartItems(updateCart);
   };
 
   return (
     <div>
       <div className="women-shoes-section">
-        <h2>ACCESSORIES</h2>
+        <h2>ABAYAS</h2>
         <div className="shoes-container">
           {Acessoriesdata.map((shoe) => (
-            <div className="shoe-card" key={shoe.id}>
+            <div
+              className="shoe-card"
+              key={shoe.id}
+              onClick={() => handleProductClick(shoe)}
+            >
               <img src={shoe.image} alt={shoe.name} />
               <h3>{shoe.name}</h3>
               <p>Price: {shoe.price}</p>
@@ -67,6 +75,11 @@ const Acessories = () => {
           ))}
         </div>
       </div>
+
+      {selectedProduct && (
+        <ProductDetails product={selectedProduct} addToCart={handleAddToCart} />
+      )}
+
       <Cart
         cartItems={cartItems}
         increaseQuantity={increaseQuantity}
