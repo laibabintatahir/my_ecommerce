@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useState } from "react";
 import Hijabs from "./components/Hijabs";
 import Acessories from "./components/Acessories";
 import BlogPage from "./components/Blogpage";
@@ -9,27 +10,33 @@ import { Routes, Route } from "react-router-dom";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer/Footer";
 import AboutUsPage from "./components/Aboutus/Aboutus";
-// import Login from "./components/Login";
+import LoginForm from "./components/login/Login";
+import SignupForm from "./components/login/Signup";
 
-function App() {
+const App = () => {
+  const [formType, setFormType] = useState("login");
+
+  const handleFormSwitch = (type) => {
+    setFormType(type);
+  };
+
   return (
     <div>
-       <Routes>
+      <br/><br/>
+      {formType === "login" ? (
+        <LoginForm onFormSwitch={handleFormSwitch} />
+      ) : (
+        <SignupForm onFormSwitch={handleFormSwitch} />
+      )}
 
-       
-        <Route exact path="/" element={<BlogPage/>} />
-        <Route path="/blog/:id" element={<DetailedBlog/>} />
-
-      </Routes>
-      {/* <Login/> */}
       <Abaya />
-      <Hijabs/>
-     {/* <AboutUsPage/> */}
+      <Hijabs />
+      {/* <AboutUsPage/> */}
       <Acessories />
       {/* <ContactUs/> */}
-      <Footer/>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

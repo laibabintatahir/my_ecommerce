@@ -12,9 +12,6 @@ import Cart from "./Cart";
       { id: 11, name: "Dreamy Chiffon ", price: 560, image: "images/h11.jpg" },
       { id: 12, name: "CHIFFON HIJAB MA", price: 650, image: "images/h12.jpg" },
       { id: 6, name: "CHIFFON HIJAB Wrap s", price: 535, image: "images/h3.jpg" },
-      { id: 7, name: "Sophisticated CHIFFON HIJAB ", price: 400, image: "images/h7.jpg" },
-      { id: 8, name: "Bohemian CHIFFON HIJAB", price: 560, image: "images/h8.jpg" },
-      { id: 9, name: "Clestial CHIFFON HIJAB", price: 550, image: "images/h9.jpg" },
     ]);
 
   const [cartItems, setCartItems] = useState([]);

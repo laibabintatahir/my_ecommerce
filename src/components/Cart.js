@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useMemo } from "react";
 import "./style.css";
 
 const Cart = ({ cartItems, increaseQuantity, decreaseQuantity, removeItem }) => {
-  const totalPrice = cartItems.reduce((total, item) => {
-    return total + item.price * item.quantity;
-  }, 0);
+  const totalPrice = useMemo(() => {
+    let calculatedPrice = 0;
+
+    for (const item of cartItems) {
+      calculatedPrice += item.price * item.quantity;
+    }
+
+    return calculatedPrice;
+  }, [cartItems]);
 
   return (
     <div className="cart-container">
@@ -40,3 +46,4 @@ const Cart = ({ cartItems, increaseQuantity, decreaseQuantity, removeItem }) => 
 };
 
 export default Cart;
+
