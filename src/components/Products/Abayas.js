@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProductDetails from "./ProductDetails";
 import "./style.css";
 import Cart from "./Cart";
+import Header from "../Header/Header";
 
 const Abaya = () => {
   const [abayasdata, setAbayasdata] = useState([
@@ -83,6 +84,7 @@ const Abaya = () => {
 
   return (
     <div>
+      <Header></Header>
       <div className="women-shoes-section">
         <h2>ABAYAS</h2>
         <div className="shoes-container">

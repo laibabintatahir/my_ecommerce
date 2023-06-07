@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./style.css";
 import Cart from "./Cart";
+import Header from "../Header/Header";
+
   const Hijabs = () => {
     const [hijabsdata, sethijabsdata] = useState([
       { id: 1, name: "CHIFFON HIJAB Amblish", price: 700, image: "images/h1.jpg" },

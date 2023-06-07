@@ -13,32 +13,36 @@ import AboutUsPage from "./components/Aboutus/Aboutus";
 import LoginForm from "./components/login/Login";
 import SignupForm from "./components/login/Signup";
 import Header from "./components/Header/Header";
+import Home from "./Pages/Home";
+import Abayapage from "./Pages/Abayapage";
 
 const App = () => {
-  const [formType, setFormType] = useState("login");
+  // const [formType, setFormType] = useState("login");
 
-  const handleFormSwitch = (type) => {
-    setFormType(type);
-  };
+  // const handleFormSwitch = (type) => {
+  //   setFormType(type);
+  // };
 
   return (
     <div>
-      <Header />
-      <Abaya />
-      <Hijabs />
-      <Acessories />
-      <ContactUs/>
-      <AboutUsPage/>
-      <Footer />
+      <Routes>
 
+        <Route path="/" element={ <Home/>}/>
+        <Route path="/abayapage" element={<Abayapage/> }/>
+        <Route path="/hijabs" element={ <Hijabs /> }/>
+        <Route path="/accessories" element={<Acessories /> }/>
+        <Route path="/contactus" element={ <ContactUs/>}/>
+        <Route path="/aboutus" element={  <AboutUsPage/>}/>
+
+      </Routes>
       <br />
       <br />
 
-      {formType === "login" ? (
+      {/* {formType === "login" ? (
         <LoginForm onFormSwitch={handleFormSwitch} />
       ) : (
         <SignupForm onFormSwitch={handleFormSwitch} />
-      )}
+      )} */}
       <br />
       <br />
 

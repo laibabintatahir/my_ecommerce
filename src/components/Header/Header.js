@@ -47,22 +47,19 @@ const Header = () => {
                 <Link to="/">HOME</Link>
               </li>
               <li>
-                <Link to="/">ABAYAS</Link>
+                <Link to="/abayapage">ABAYAS</Link>
               </li>
               <li>
-                <Link to="/">HIJABS</Link>
+                <Link to="/hijabs">HIJABS</Link>
               </li>
               <li>
-                <Link to="/">ACCESSORIES</Link>
+                <Link to="/accessories">ACCESSORIES</Link>
               </li>
               <li>
-                <Link to="/">BLOG</Link>
+                <Link to="/aboutus">ABOUT US</Link>
               </li>
               <li>
-                <Link to="/">ABOUT US</Link>
-              </li>
-              <li>
-                <Link to="/">CONTACT US</Link>
+                <Link to="/contactus">CONTACT US</Link>
               </li>
               <li className="cart-icon">
                 <Link to="/">
@@ -170,7 +167,6 @@ const Header = () => {
         <br />
       </div>
 
-      <Footer/>
     </>
   );
 };
