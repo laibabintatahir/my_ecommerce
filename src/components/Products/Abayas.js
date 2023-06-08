@@ -47,16 +47,16 @@ const Abaya = () => {
   ]);
 
   const [cartItems, setCartItems] = useState([]);
-  const navigate = useNavigate(); 
-
-  // const handleAddToCart = (product) => {
-  //   setCartItems([...cartItems, { ...product, quantity: 1 }]);
-  // };
+  //const navigate = useNavigate(); 
 
   const handleAddToCart = (product) => {
     setCartItems([...cartItems, { ...product, quantity: 1 }]);
-    navigate("/cart");
   };
+
+  // const handleAddToCart = (product) => {
+  //   setCartItems([...cartItems, { ...product, quantity: 1 }]);
+  //   navigate("/cart");
+  // };
 
   //for detail page
   const [selectedProduct, setSelectedProduct] = useState(null);

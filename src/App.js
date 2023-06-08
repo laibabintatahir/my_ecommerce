@@ -10,6 +10,7 @@ import Contactpage from "./Pages/Contactpage";
 import Loginpage from "./Pages/Loginpage";
 import Cartpage from "./Pages/Cartpage";
 import SignUpPage from "./Pages/SignUPage";
+import Checkout from "./Pages/Checkout";
 
 const App = () => {
   return (
@@ -21,9 +22,10 @@ const App = () => {
         <Route path="/accessories" element={<Accessoriespage />} />
         <Route path="/contactus" element={<Contactpage />} />
         <Route path="/aboutus" element={<Aboutpage />} />
-        <Route path="/login" element={<Loginpage />}></Route>
-        <Route path="/signup" element={<SignUpPage />}></Route>
+        <Route path="/login" element={<Loginpage />}/>
+        <Route path="/signup" element={<SignUpPage />}/>
         <Route path="/cart" element={<Cartpage />} />
+        <Route path="/cart" element={<Checkout />} />
       </Routes>
       <br />
     </div>
