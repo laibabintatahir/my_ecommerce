@@ -44,7 +44,7 @@ const Homecontent = () => {
         <div className="banner-content">
           <h1>Welcome to our store!</h1>
           <p>Discover the latest fashion trends and shop with us.</p>
-          <Link to="/shop" className="banner-button">
+          <Link to="/abayapage" className="banner-button">
             Shop Now
           </Link>
         </div>
