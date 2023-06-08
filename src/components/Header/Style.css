@@ -93,7 +93,7 @@ nav ul li a:hover {
 }
 .user-icon {
   display: inline-block;
-  margin-left: 10px; /* Adjust the margin as needed */
+  margin-left: 10px; 
 }
 
 .user-icon a {
@@ -102,12 +102,13 @@ nav ul li a:hover {
 }
 
 .user-icon i {
-  margin-right: 5px; /* Adjust the margin as needed */
+  margin-right: 5px; 
 }
 
 /* ..............banner main.............. */
+
 .banner-container {
-  height: 300px; /* Adjust the height as per your requirement */
+  height: 300px;
   position: relative;
 }
 

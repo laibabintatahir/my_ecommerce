@@ -4,7 +4,7 @@ import "./style.css";
 const ContactUs = () => {
   return (
     <div className="contact-us-container">
-      <h2>Contact Us</h2>
+      <h1>Contact Us</h1>
       <p>Share Your Query/Critics/Suggestions with Malbus Team.</p>
       <div className="contact-details">
         <p>
