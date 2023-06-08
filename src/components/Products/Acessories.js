@@ -4,7 +4,7 @@ import "./style.css";
 import Cart from "./Cart";
 
 const Acessories = () => {
-  const [Acessoriesdata, setAcessoriesdata] = useState([
+  const Acessoriesdata = [
     { id: 1, name: "HIJAB MAGNET", price: 700, image: "images/a1.jpg" },
     { id: 2, name: "HIJAB MAGNET", price: 500, image: "images/a2.jpg" },
     { id: 3, name: "HIJAB MAGNET", price: 600, image: "images/a3.jpg" },
@@ -18,7 +18,7 @@ const Acessories = () => {
     { id: 5, name: "AMETHYST HIJAB PIN", price: 630, image: "images/a5.jpg" },
     { id: 10, name: "AMETHYST HIJAB PIN", price: 455, image: "images/a6.jpg" },
     
-  ]);
+  ];
 
   const [cartItems, setCartItems] = useState([]);
 
