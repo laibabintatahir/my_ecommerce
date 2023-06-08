@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import ProductDetails from "./ProductDetails";
+import { useNavigate } from "react-router-dom";
 import "./style.css";
 import Cart from "./Cart";
-import Header from "../Header/Header";
 
 const Abaya = () => {
+
   const [abayasdata, setAbayasdata] = useState([
     { id: 1, name: "MW Amblish", price: 1050, image: "images/s1.jpg" },
     { id: 2, name: "MW Clestial", price: 1500, image: "images/s2.jpg" },
@@ -46,9 +47,15 @@ const Abaya = () => {
   ]);
 
   const [cartItems, setCartItems] = useState([]);
+  const navigate = useNavigate(); 
+
+  // const handleAddToCart = (product) => {
+  //   setCartItems([...cartItems, { ...product, quantity: 1 }]);
+  // };
 
   const handleAddToCart = (product) => {
     setCartItems([...cartItems, { ...product, quantity: 1 }]);
+    navigate("/cart");
   };
 
   //for detail page
@@ -112,6 +119,7 @@ const Abaya = () => {
         decreaseQuantity={decreaseQuantity}
         removeItem={removeItem}
       />
+
     </div>
   );
 };

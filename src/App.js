@@ -9,6 +9,7 @@ import Aboutpage from "./Pages/Aboutpage";
 import Contactpage from "./Pages/Contactpage";
 import Loginpage from "./Pages/Loginpage";
 import Cartpage from "./Pages/Cartpage";
+import SignUpPage from "./Pages/SignUPage";
 
 const App = () => {
   return (
@@ -20,7 +21,8 @@ const App = () => {
         <Route path="/accessories" element={<Accessoriespage />} />
         <Route path="/contactus" element={<Contactpage />} />
         <Route path="/aboutus" element={<Aboutpage />} />
-        <Route path="/login" element={<Loginpage />} />
+        <Route path="/login" element={<Loginpage />}></Route>
+        <Route path="/signup" element={<SignUpPage />}></Route>
         <Route path="/cart" element={<Cartpage />} />
       </Routes>
       <br />

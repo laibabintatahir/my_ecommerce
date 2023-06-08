@@ -62,7 +62,7 @@ const Homecontent = () => {
       </div>
 
 
-      <div style={{ fontSize: "20px" }}>
+      <div style={{ fontSize: "20px" , textAlign:"center"}}>
         <p>
           The Elegance & Modesty, You All Crave For — Pakistan's Only & <br />{" "}
           Largest Modest Attire Brand.

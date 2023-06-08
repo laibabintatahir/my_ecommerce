@@ -5,12 +5,13 @@ import Footer from "../components/Footer/Footer";
 
 const Cartpage = () => {
   return (
-    <div>
-      <Header />
-      <Cart/>
-      <Footer />
-    </div>
+<div>
+  <Header />
+  <Cart/>
+  <Footer />
+</div>
   );
 };
 
 export default Cartpage;
+
