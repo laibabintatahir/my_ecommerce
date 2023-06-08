@@ -24,8 +24,6 @@ import Cart from "./Cart";
       setCartItems([...cartItems, { ...product, quantity: 1 }]);
     };
   
-
-  
     const increaseQuantity = (item) => {
       const updatedCartItems = cartItems.map((cartItem) =>
         cartItem.id === item.id

@@ -25,7 +25,7 @@ header {
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .logo a {
@@ -38,7 +38,7 @@ header {
 }
 
 .logo img {
-  width: 100px;
+  width: 120px;
   height: 60px;
   margin-right: 10px;
 }
@@ -90,6 +90,19 @@ nav ul li a:hover {
   align-items: center;
   color: #fff;
   font-size: 12px;
+}
+.user-icon {
+  display: inline-block;
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.user-icon a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.user-icon i {
+  margin-right: 5px; /* Adjust the margin as needed */
 }
 
 /* ..............banner main.............. */
