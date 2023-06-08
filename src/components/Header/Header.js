@@ -31,10 +31,13 @@ const Header = () => {
                 <Link to="/accessories">ACCESSORIES</Link>
               </li>
               <li>
-                <Link to="/aboutus">ABOUT US</Link>
+                <Link to="/aboutus">ABOUT</Link>
               </li>
               <li>
-                <Link to="/contactus">CONTACT US</Link>
+                <Link to="/contactus">CONTACT</Link>
+              </li>
+              <li>
+                <Link to="/checkout">CHECKOUT</Link>
               </li>
               <li className="cart-icon">
                 <Link to="/cart"> <i className="fa fa-shopping-cart"></i> </Link>
