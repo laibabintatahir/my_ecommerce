@@ -39,11 +39,11 @@ const Header = () => {
               <li>
                 <Link to="/checkout">CHECKOUT</Link>
               </li>
-              <li className="cart-icon">
+              {/* <li className="cart-icon">
                 <Link to="/cart"> <i className="fa fa-shopping-cart"></i> </Link>
-              </li>
+              </li> */}
               <li className="user-icon">
-                <Link to="/login"> <i className="fa fa-user"></i></Link>
+                <Link to="/login"><i className="fa fa-user"></i>LOGIN</Link>
               </li>
             </ul>
           </nav>

@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-import ProductDetails from "./ProductDetails";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import ProductDetails from "./ProductDetails";
 import "./style.css";
 import Cart from "./Cart";
 
 const Abaya = () => {
-
   const [abayasdata, setAbayasdata] = useState([
     { id: 1, name: "MW Amblish", price: 1050, image: "images/s1.jpg" },
     { id: 2, name: "MW Clestial", price: 1500, image: "images/s2.jpg" },
@@ -47,22 +46,16 @@ const Abaya = () => {
   ]);
 
   const [cartItems, setCartItems] = useState([]);
-  //const navigate = useNavigate(); 
+
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const navigate = useNavigate();
 
   const handleAddToCart = (product) => {
     setCartItems([...cartItems, { ...product, quantity: 1 }]);
   };
 
-  // const handleAddToCart = (product) => {
-  //   setCartItems([...cartItems, { ...product, quantity: 1 }]);
-  //   navigate("/cart");
-  // };
-
-  //for detail page
-  const [selectedProduct, setSelectedProduct] = useState(null);
-
   const handleProductClick = (product) => {
-    setSelectedProduct(product);
+    navigate('/productdetails');
   };
 
   const increaseQuantity = (item) => {
@@ -75,18 +68,17 @@ const Abaya = () => {
   };
 
   const decreaseQuantity = (item) => {
-    const updatedCartItems = cartItems.map((cartItem) => {
-      if (cartItem.id === item.id && cartItem.quantity > 1) {
-        return { ...cartItem, quantity: cartItem.quantity - 1 };
-      }
-      return cartItem;
-    });
+    const updatedCartItems = cartItems.map((cartItem) =>
+      cartItem.id === item.id && cartItem.quantity > 1
+        ? { ...cartItem, quantity: cartItem.quantity - 1 }
+        : cartItem
+    );
     setCartItems(updatedCartItems);
   };
 
   const removeItem = (item) => {
-    const updateCart = cartItems.filter((cartItem) => cartItem.id !== item.id);
-    setCartItems(updateCart);
+    const updatedCart = cartItems.filter((cartItem) => cartItem.id !== item.id);
+    setCartItems(updatedCart);
   };
 
   return (
@@ -110,7 +102,13 @@ const Abaya = () => {
       </div>
 
       {selectedProduct && (
-        <ProductDetails product={selectedProduct} addToCart={handleAddToCart} />
+        <ProductDetails
+          product={selectedProduct}
+          addToCart={handleAddToCart}
+          increaseQuantity={increaseQuantity}
+          decreaseQuantity={decreaseQuantity}
+          removeItem={removeItem}
+        />
       )}
 
       <Cart
@@ -119,9 +117,9 @@ const Abaya = () => {
         decreaseQuantity={decreaseQuantity}
         removeItem={removeItem}
       />
-
     </div>
   );
 };
 
 export default Abaya;
+

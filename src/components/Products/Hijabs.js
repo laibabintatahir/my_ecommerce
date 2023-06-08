@@ -1,10 +1,12 @@
-import React, { useState } from "react";
 import "./style.css";
-import ProductDetails from "./ProductDetails";
+import React, { useContext } from "react";
+import { AppContext } from "./AppContext";
 import Cart from "./Cart";
 
   const Hijabs = () => {
-    const [hijabsdata, sethijabsdata] = useState([
+    const { cartItems, setCartItems } = useContext(AppContext);
+
+    const hijabsdata = [
       { id: 1, name: "CHIFFON HIJAB AMBLISH", price: 700, image: "images/h1.jpg" },
       { id: 2, name: "CHIFFON HIJABCLESTIL", price: 500, image: "images/h2.jpg" },
       { id: 3, name: "Graceful CHIFFON HIJAB", price: 600, image: "images/h3.jpg" },
@@ -14,20 +16,14 @@ import Cart from "./Cart";
       { id: 11, name: "DREAMY CHIFON ", price: 560, image: "images/h11.jpg" },
       { id: 12, name: "CHIFFON HIJAB MA", price: 650, image: "images/h12.jpg" },
       { id: 6, name: "CHIFFON HIJAB WRAP s", price: 535, image: "images/h3.jpg" },
-    ]);
+    ];
 
-    const [cartItems, setCartItems] = useState([]);
 
     const handleAddToCart = (product) => {
       setCartItems([...cartItems, { ...product, quantity: 1 }]);
     };
   
-    //for detail page
-    const [selectedProduct, setSelectedProduct] = useState(null);
-  
-    const handleProductClick = (product) => {
-      setSelectedProduct(product);
-    };
+
   
     const increaseQuantity = (item) => {
       const updatedCartItems = cartItems.map((cartItem) =>
@@ -62,7 +58,7 @@ import Cart from "./Cart";
               <div
                 className="shoe-card"
                 key={shoe.id}
-                onClick={() => handleProductClick(shoe)}
+                
               >
                 <img src={shoe.image} alt={shoe.name} />
                 <h3>{shoe.name}</h3>
@@ -72,10 +68,7 @@ import Cart from "./Cart";
             ))}
           </div>
         </div>
-  
-        {selectedProduct && (
-          <ProductDetails product={selectedProduct} addToCart={handleAddToCart} />
-        )}
+
   
         <Cart
           cartItems={cartItems}

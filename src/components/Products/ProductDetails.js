@@ -54,5 +54,4 @@ const ProductDetails = ({ product, addToCart }) => {
     </>
   );
 };
-
 export default ProductDetails;

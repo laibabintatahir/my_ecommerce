@@ -8,15 +8,16 @@ const Acessories = () => {
     { id: 1, name: "HIJAB MAGNET", price: 700, image: "images/a1.jpg" },
     { id: 2, name: "HIJAB MAGNET", price: 500, image: "images/a2.jpg" },
     { id: 3, name: "HIJAB MAGNET", price: 600, image: "images/a3.jpg" },
-    { id: 4, name: "AMETHYST HIJAB PIN", price: 780, image: "images/a4.jpg" },
-    { id: 5, name: "AMETHYST HIJAB PIN", price: 630, image: "images/a5.jpg" },
-    { id: 10, name: "AMETHYST HIJAB PIN", price: 455, image: "images/a6.jpg" },
-    { id: 11, name: "FLORA SILK SCRUNCHIE", price: 560, image: "images/a8.jpg" },
-    { id: 12, name: "FLORA SILK SCRUNCHIE", price: 650, image: "images/a9.jpg" },
-    { id: 6, name: "FLORA SILK SCRUNCHIE", price: 535, image: "images/a10.jpg" },
     { id: 7, name: "SULEMANI AQEEQ", price: 400, image: "images/a11.jpg" },
     { id: 8, name: "SULEMANI AQEEQ", price: 560, image: "images/a12.jpg" },
     { id: 9, name: "SULEMANI AQEEQ", price: 550, image: "images/a7.jpg" },
+    { id: 11, name: "FLORA SILK SCRUNCHIE", price: 560, image: "images/a8.jpg" },
+    { id: 12, name: "FLORA SILK SCRUNCHIE", price: 650, image: "images/a9.jpg" },
+    { id: 6, name: "FLORA SILK SCRUNCHIE", price: 535, image: "images/a10.jpg" },
+    { id: 4, name: "AMETHYST HIJAB PIN", price: 780, image: "images/a4.jpg" },
+    { id: 5, name: "AMETHYST HIJAB PIN", price: 630, image: "images/a5.jpg" },
+    { id: 10, name: "AMETHYST HIJAB PIN", price: 455, image: "images/a6.jpg" },
+    
   ]);
 
   const [cartItems, setCartItems] = useState([]);
