@@ -12,6 +12,8 @@ const CheckoutPage = () => {
   };
 
   return (
+
+    // The  onSubmit onHandle Form
     <div className="checkout-page">
       <h1>Checkout</h1>
       <form className="checkout-form" onSubmit={handleSubmit}>

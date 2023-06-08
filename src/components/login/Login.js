@@ -6,8 +6,11 @@ function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const navigate = useNavigate(); // The useNavigate hook
+  // The useNavigate hook
+  const navigate = useNavigate();
 
+
+ // The useRef hook
   const inputRef = useState(null);
 
   const handleUsername = (e) => {
@@ -17,15 +20,13 @@ function Login() {
   const handlePassword = (e) => {
     setPassword(e.target.value);
   };
-
+ // The useEffect hook
   useEffect(() => {
     inputRef.current.focus();
   }, []);
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    // Add your sign-in logic here
-    // After successful sign-in, navigate to the home page or another route
     navigate("/");
   };
 

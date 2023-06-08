@@ -4,6 +4,7 @@ import { AppContext } from "./AppContext";
 import Cart from "./Cart";
 
   const Hijabs = () => {
+    // The useContext hook
     const { cartItems, setCartItems } = useContext(AppContext);
 
     const hijabsdata = [

@@ -8,6 +8,7 @@ const Cart = ({
   removeItem,
 }) => {
   
+  //The useMemo hook
   const totalPrice = useMemo(() => {
     let calculatedPrice = 0;
 
