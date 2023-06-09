@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 
+//props
 const ProductDetails = ({ product, addToCart }) => {
   const handleAddToCart = () => {
     addToCart(product);

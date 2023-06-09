@@ -68,7 +68,7 @@ import Cart from "./Cart";
           </div>
         </div>
 
-  
+  {/* parent comp sending props to cart  */}
         <Cart
           cartItems={cartItems}
           increaseQuantity={increaseQuantity}
