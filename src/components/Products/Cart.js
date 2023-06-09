@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import "./style.css";
 
-//props
+//props recieved
 const Cart = ({ cartItems,increaseQuantity,decreaseQuantity,removeItem,}) => {
   
   //The useMemo hook

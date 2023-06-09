@@ -53,6 +53,8 @@ import Cart from "./Cart";
         <div className="women-shoes-section">
           <h2>HIJABS</h2>
           <div className="shoes-container">
+
+            {/* mapping */}
             {hijabsdata.map((shoe) => (
               <div
                 className="shoe-card"
