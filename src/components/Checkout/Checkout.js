@@ -58,6 +58,7 @@ const CheckoutPage = () => {
         </div>
         <button type="submit">Place Order</button>
       </form>
+      <br/> <br/>
     </div>
   );
 };

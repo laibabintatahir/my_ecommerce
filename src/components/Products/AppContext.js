@@ -4,7 +4,7 @@ export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   // const [cartItems, setCartItems] = useState([]);
-  const [hijabsdata, sethijabsdata] = useState([
+  const [hijabsdata] = useState([
     { id: 1, name: "CHIFFON HIJAB AMBLISH", price: 700, image: "images/h1.jpg" },
     { id: 2, name: "CHIFFON HIJABCLESTIL", price: 500, image: "images/h2.jpg" },
     { id: 3, name: "Graceful CHIFFON HIJAB", price: 600, image: "images/h3.jpg" },

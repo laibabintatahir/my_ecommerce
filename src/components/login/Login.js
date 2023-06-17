@@ -40,12 +40,14 @@ function Login() {
           <h2 className="form-title">Sign in to your account</h2>
           <div className="input-container">
             <input
+
               ref={inputRef}
               type="email"
               placeholder="Enter email"
               value={username}
               onChange={handleUsername}
             />
+            
             <span className="input-highlight"></span>
           </div>
           <div className="input-container">
